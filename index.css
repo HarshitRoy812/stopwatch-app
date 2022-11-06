@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+
+*
+{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    background : linear-gradient(to bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url('wallpaper.png') no-repeat center;
+    background-size: cover;
+}
+
+#main_content 
+{
+    display : flex;
+    flex-direction: column;
+    position : absolute;
+    left : 50%;
+    top : 50%;
+    transform : translate(-50%,-50%);
+}
+
+#container 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height : 150px;
+    width : 400px;
+    background : rgba(0,0,0,0.5);
+}
+
+.text,.separator 
+{
+    color : white;
+    font-family: 'Abel', sans-serif;
+    font-size : 2rem;
+}
+.separator 
+{
+    font-size: 1.2rem;
+}
+.text 
+{
+    font-size : 2.5rem;
+}
+
+.buttons 
+{
+    width : 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height : 100px;
+    align-items: center;
+}
+
+button 
+{
+    height : 50px;
+    width : 120px;
+    background : #ffb703;
+    outline : none;
+    border : none;
+    font-family: 'Work Sans', sans-serif;
+    font-size : 0.9rem;
+    border-radius: 5px;
+    cursor : pointer;
+    font-weight: 400;
+    transition : 0.3s;
+    box-shadow : 0 2px 5px rgba(0,0,0,0.5);
+}
+
+button:hover 
+{
+    background : #f48c06;
+}
+
+button:active 
+{
+    box-shadow : inset 0 2px 3px rgba(0,0,0,0.7);
+}
